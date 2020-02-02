@@ -1,7 +1,7 @@
 const { hello, goodbye } = require('./actions');
 
 const main = async () => {
-  await hello();
+  await hello()
   goodbye()
 };
 
