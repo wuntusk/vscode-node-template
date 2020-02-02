@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint \"**/*.js\"",
+    "lint:fix": "prettier-eslint \"**/*.js\" --write",
     "test": "jest"
   },
   "author": "",
@@ -12,7 +14,7 @@
     "node": ">=10.3 <=12.4.0"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
+    "eslint": "~6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-node": "^4.0.0",
     "eslint-config-prettier": "^6.9.0",
@@ -20,7 +22,9 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "jest": "^25.1.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0"
   },
   "jest": {
     "setupFilesAfterEnv": [
