@@ -1,6 +1,11 @@
 {
-  "extends": ["airbnb-base", "prettier", "plugin:node/recommended"],
-  "plugins": ["prettier"],
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:node/recommended",
+    "plugin:jest/recommended"
+  ],
+  "plugins": ["prettier", "jest"],
   "rules": {
     "prettier/prettier": "error",
     "no-process-exit": "off",
