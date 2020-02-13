@@ -47,5 +47,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
   }
 }
