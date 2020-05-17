@@ -1,5 +1,8 @@
 {
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#c56f1e"
+  },
+    "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }

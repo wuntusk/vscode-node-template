@@ -4,9 +4,20 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}/index.js",
-      "skipFiles": ["<node_internals>/**"]
+      "name": "Debug Run",
+      "program": "${workspaceFolder}/src/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Attach",
+      "program": "${workspaceRoot}/node_modules/ts-node-dev/bin/ts-node-dev",
+      "args": ["--inspect", "--no-notify", "--respawn", "--transpileOnly", "./src"],
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "port": 9229
     },
     {
       "type": "node",

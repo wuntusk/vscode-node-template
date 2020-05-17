@@ -1,4 +1,4 @@
-# VSCode Node Template
+# VSCode Node Template Typescript Version
 
 A quick template to prototype some node stuff or start a project.
 
